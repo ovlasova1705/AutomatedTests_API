@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","1019","POST: Should authenticate user","chromium","Thu Sep 05 12:58:18 UTC 2024","passed","Thu Sep 05 12:58:19 UTC 2024","","api.spec.ts","",""
-"","816","POST: Should create a new user","chromium","Thu Sep 05 12:58:13 UTC 2024","passed","Thu Sep 05 12:58:14 UTC 2024","","api.spec.ts","",""
-"","973","DELETE: Should delete a user","chromium","Thu Sep 05 12:58:19 UTC 2024","passed","Thu Sep 05 12:58:20 UTC 2024","","api.spec.ts","",""
+"","509","POST: Should create a new user","chromium","Thu Sep 05 13:14:52 UTC 2024","passed","Thu Sep 05 13:14:53 UTC 2024","","api.spec.ts","",""
+"","633","POST: Should authenticate user","chromium","Thu Sep 05 13:14:53 UTC 2024","passed","Thu Sep 05 13:14:53 UTC 2024","","api.spec.ts","",""
+"","1509","DELETE: Should delete a user","chromium","Thu Sep 05 13:14:55 UTC 2024","passed","Thu Sep 05 13:14:57 UTC 2024","","api.spec.ts","",""
