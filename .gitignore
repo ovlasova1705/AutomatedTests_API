@@ -3,3 +3,23 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+# Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Compiled TypeScript
+dist/
+
+# Allure Report
+allure-results/
+allure-report/
+
+# Environment variables
+.env
+
+# Other config
+.DS_Store
