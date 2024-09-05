@@ -1,26 +1,31 @@
 {
-  "name": "automatedtests_api",
+  "name": "automatedtests",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ovlasova1705/AutomatedTests_API.git"
+  "scripts": {
+    "test": "npx playwright test",
+    "allure:generate": "npx allure generate allure-results --clean",
+    "allure:open": "npx allure open",
+    "allure:clean:results": "npx rimraf allure-results",
+    "allure:clean:report": "npx rimraf allure-report",
+    "allure:report": "npm run allure:generate && npm run allure:clean:results && npm run allure:open",
+    "deploy:report": "gh-pages -d allure-report -r https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/ovlasova1705/AutomatedTests.git",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ovlasova1705/AutomatedTests_API/issues"
-  },
-  "homepage": "https://github.com/ovlasova1705/AutomatedTests_API#readme",
   "devDependencies": {
     "@playwright/test": "^1.46.1",
-    "@types/node": "^22.5.4",
-    "allure-playwright": "^3.0.0-beta.11"
+    "@types/node": "^22.5.0",
+    "allure-playwright": "^3.0.0-beta.10",
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
-    "axios": "^1.7.7"
+    "@faker-js/faker": "^8.4.1",
+    "axios": "^1.7.5",
+    "dotenv": "^16.4.5"
   }
 }
